@@ -1,0 +1,19 @@
+plugins：插件
+
+git bash：命令行
+
+github us网络上公共的云
+
+github账号webydd
+
+讲义github仓库地址
+ https://github.com/zhufengpeixun/Javascript201701.git
+
+
+front engineer 前端工程师
+RD
+PM
+AM
+CEO
+CTO
+QA

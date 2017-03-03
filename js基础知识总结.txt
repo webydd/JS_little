@@ -1,0 +1,38 @@
+一、isNaN()检测是不是有效数字 ,如果是有效数字，返回false(不成立)；如果不是有效数字，返回true(成立)      还可以理解为是不是NaN，如果是NaN，则成立(true);不是NaN，则不成立(false)
+isNaN([])
+false//isNaN('[]')
+true//isNaN('')
+false//isNaN('p')
+true//isNaN(NaN)
+true//isNaN(10)
+false
+//isNaN(0)
+false//isNaN(-1)
+false//isNaN(0.5)
+false//isNaN('2')
+false//isNaN(2)
+false
+二、检测数据类型
+    1)、typeof  返回值 "number" "string" "boolean" "Object" "undefined"  "function" 
+    2)、instanceof 检测一个实例是否属于构造函数(类)  返回值 布尔值(true/false)
+                 [] instanceof Array //{} instanceof Object
+    3)、constructor 检测一个实例是否属于所属类，也可以找出一个实例所属构造函数(类)的函数名
+                   情形1)  function FE(){}
+
+                          var f1 = new FE()
+
+
+                          f1.constructor=== FE// true
+
+                   情形2) function FE(){}
+
+                          var f1 = new FE()
+
+
+                          f1.constructor==>function FE(){}
+    4)、Object.prototype.toString.call     
+
+
+
+
+    构造函数(类) function 函数名(){this.x}//此处this是指实例m，其中x指实例的私有属性     创建一个实例   var m =  new 函数名()
