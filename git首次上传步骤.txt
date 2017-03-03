@@ -1,0 +1,11 @@
+在自己的github仓库新建空的仓库（不能勾选readme)
+git config --global user.name "realname"
+git config --global user.email "xxx@email.com"
+
+git init 
+git remote add 链接名（origin） 自己仓库地址 让本地仓库和自己的远程仓库链接 
+git remote -v查看当前仓库和哪些远程仓库链接
+提交
+git add -A全部提交也可以是具体的文件名 暂存区
+git commit -m "本次提交完成哪个求" 历史区 生成版本号
+git remote 链接名master推送到github需要输入用户名和密码
