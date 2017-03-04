@@ -8,4 +8,4 @@ git remote -v查看当前仓库和哪些远程仓库链接
 提交
 git add -A全部提交也可以是具体的文件名 暂存区
 git commit -m "本次提交完成哪个求" 历史区 生成版本号
-git remote 链接名master推送到github需要输入用户名和密码
+git push 链接名master推送到github需要输入用户名和密码

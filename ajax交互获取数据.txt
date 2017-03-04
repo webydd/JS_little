@@ -1,0 +1,22 @@
+   // ajax  aynsc javascript and XML 
+    var xhr = new XMLHttpRequest(); // 1、创建一个异步对象
+    xhr.open('get', 'data.txt', false); // get方式/post，接口URL,同步异步  false : 同步：就是数据拿来的时候执行（2、异步对象执行的方式）
+    xhr.onreadystatechange = function () {//onreadystatechange 事件是在readyState属性发生改变时触发的
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            /*
+            * readyState的值表示了当前请求（XMLHttpRquest）的状态 ，在事件处理程序中可以根据这个值来进行不同的处理            0:请求尚未初始化  1:服务器连接已建立  2:请求已接受 3:请求处理中  4:请求已完成，响应已就绪
+            * */
+            //Http 状态码含义:（status存储了服务器端返回的Http请求响应代码，表示请求的处理结果)
+            // 200   请求成功(服务端返回了正确数据，开始响应处理)
+            // 202   请求被接受但处理未完成
+            // 304  本地缓存
+            // 400   错误请求
+            // 404  请求资源未找到 前端
+            // 500  （内部服务器）服务端错误
+
+
+            /*window.*/
+            data = JSON.parse(xhr.responseText); // 这个属性保存着从接口获取回来的数据 响应文本responseText
+        }
+    };
+    xhr.send(null);
